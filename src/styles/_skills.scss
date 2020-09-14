@@ -1,0 +1,21 @@
+.skills {
+    width: 80%;
+    align-items: center;
+    margin: 15px 0;
+    .skill {
+        width: 100%;
+        margin-top: 20px;
+        .skill-bar {
+            width: 100%;
+            height: 20px;
+            background-color: colors.$skillbar-empty;
+            box-shadow: 2px 2px 2px rgba($color: #000000, $alpha: 0.90);
+            border-radius: 5px;
+            .skill-level {
+                height: 100%;
+                background-color: colors.$skillbar-fill;
+                border-radius: 5px;
+            }
+        }
+    }
+}

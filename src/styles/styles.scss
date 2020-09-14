@@ -1,5 +1,6 @@
 @use "spacing";
 @use "colors";
+@import "skills";
 
 $header-height: 100px;
 $header-image: "../../src/images/oriental-tiles.png";
@@ -45,27 +46,6 @@ body {
     align-items: center;
     box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
     z-index: 1;
-}
-.skills {
-    width: 80%;
-    align-items: center;
-    margin: 15px 0;
-    .skill {
-        width: 100%;
-        margin-top: 20px;
-        .skill-bar {
-            width: 100%;
-            height: 20px;
-            background-color: colors.$skillbar-empty;
-            box-shadow: 2px 2px 2px rgba($color: #000000, $alpha: 0.90);
-            border-radius: 5px;
-            .skill-level {
-                height: 100%;
-                background-color: colors.$skillbar-fill;
-                border-radius: 5px;
-            }
-        }
-    }
 }
 .right-section {
     height: 100%;
