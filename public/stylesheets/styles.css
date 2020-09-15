@@ -25,13 +25,17 @@ body {
   padding: 0;
 }
 
-.flex {
+.flex, .flex--center, .flex--column, .flex--column--center {
   display: flex;
 }
-
-.flex-column {
-  display: flex;
+.flex--column, .flex--column--center {
   flex-direction: column;
+}
+.flex--column--center {
+  align-items: center;
+}
+.flex--center {
+  justify-content: center;
 }
 
 .page {
@@ -52,34 +56,43 @@ body {
 
 .page-content {
   height: calc(100% - 100px);
-  display: flex;
 }
 
-.left-section {
+.left-panel {
   height: 100%;
   width: 30%;
   background-color: #fff;
-  align-items: center;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
-.right-section {
+.right-panel {
   height: 100%;
   width: 70%;
   background-color: lightgray;
-  align-items: center;
 }
-.right-section div p {
+.right-panel div p {
   margin: 20px;
 }
 
-#skill1 {
-  width: 90%;
+#skill-html {
+  width: 70%;
 }
 
-#skill2 {
-  width: 30%;
+#skill-css {
+  width: 50%;
+}
+
+#skill-sass {
+  width: 40%;
+}
+
+#skill-python {
+  width: 20%;
+}
+
+#skill-javascript {
+  width: 20%;
 }
 
 /*# sourceMappingURL=styles.css.map */
