@@ -4,7 +4,7 @@
 
 $header-height: 100px;
 $header-image: "oriental-tiles.png";
-$left-width: 30%;
+$left-width: 35%;
 $skill-html-level: 70%;
 $skill-css-level: 50%;
 $skill-sass-level: 40%;
@@ -15,6 +15,7 @@ $skill-javascript-level: 20%;
     height: 100%;
     width: $width;
     background-color: $background-color;
+    padding-bottom: 30px;
 }
 
 body {
@@ -37,7 +38,6 @@ body {
         justify-content: center;
     }
 }
-
 .page {
     height: 100vh;
     width: 100vw;
@@ -63,14 +63,14 @@ body {
     z-index: 1;
 }
 .right-panel {
+    padding-left: 100px;
     @include panel(100%-$left-width, colors.$right-panel);
-    div {
-        
-        p {
-            margin: spacing.$single-spacing;
-        }
-    }
+    
 }
+.summary {
+    width: 80%;
+}
+
 #skill-html {
     width: $skill-html-level;
 }

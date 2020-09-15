@@ -60,19 +60,23 @@ body {
 
 .left-panel {
   height: 100%;
-  width: 30%;
+  width: 35%;
   background-color: #fff;
+  padding-bottom: 30px;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .right-panel {
+  padding-left: 100px;
   height: 100%;
-  width: 70%;
+  width: 65%;
   background-color: lightgray;
+  padding-bottom: 30px;
 }
-.right-panel div p {
-  margin: 20px;
+
+.summary {
+  width: 80%;
 }
 
 #skill-html {
